@@ -107,7 +107,7 @@ Putting it together: the model mainly minimizes pixel‑wise error, with two gen
 
 Figure: Attention U‑Net schematic used in this work:
 
-![Attention U‑Net Architecture](unet_attention_architecture.svg)
+![Attention U‑Net Architecture](docs/figures/unet_attention_architecture.svg)
 
 <sub>Figure 1: The measurement vector is projected to a 2D canvas, processed through an encoder (blue) and decoder (green) with attention gates (red) highlighting useful skip features; bottleneck (orange) provides deep context. SVG for clarity; PNG fallback at `docs/figures/unet_attention_architecture.png`.</sub>
 

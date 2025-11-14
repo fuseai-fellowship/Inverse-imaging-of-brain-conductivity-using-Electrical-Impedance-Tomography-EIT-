@@ -144,7 +144,7 @@ Below is a high-level view of the dataset characteristics used in this work (inp
 ## 7. Project layout (key artifacts only)
 
 - Notebooks
-  - `FUSE_UNET.ipynb` — model and training/evaluation pipeline used in this work
+  - `UNET_EIT.ipynb` — model and training/evaluation pipeline used in this work
   - `BRAIN_EIT.ipynb` — EIT context, data preparation, and analysis notebook
 - Models
   - `best_attention_unet_eit.keras` — best checkpoint (by validation loss)

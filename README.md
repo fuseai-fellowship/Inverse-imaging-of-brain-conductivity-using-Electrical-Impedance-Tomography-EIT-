@@ -136,12 +136,12 @@ These trends indicate the model learns a stable mapping that generalizes across 
 
 Below is a high-level view of the dataset characteristics used in this work (inputs and targets). This helps contextualize the magnitude and distribution of measurements and ground-truth images across the splits.
 
-![Dataset visualization](data_visualization.png)
+![Dataset visualization](output.png)
 
 <sub>Figure 2: Example dataset summary illustrating typical input measurement distributions and corresponding conductivity change targets (visual layout depends on the generated plot). Helps confirm dynamic range and anomaly localization diversity.</sub>
 
 
-## 7. Repository layout (key artifacts only)
+## 7. Project layout (key artifacts only)
 
 - Notebooks
   - `FUSE_UNET.ipynb` — model and training/evaluation pipeline used in this work
@@ -151,13 +151,13 @@ Below is a high-level view of the dataset characteristics used in this work (inp
   - `eit_attention_unet_final.keras` — final saved model after training
 - Datasets & meshes
   - `brain_eit_training*/` `brain_eit_validation*/` `brain_eit_test*/` — contain `brain_eit_dataset.h5`
-  - `mesh_POOL.pkl` — mesh/forward model pool used during data generation (if provided in your setup)
+  - `mesh_pool.pkl` — mesh/forward model pool used during data generation (if provided in your setup)
 - Logs & metrics
   - `logs/train/` and `logs/validation/` — TensorBoard event files
   - `training_log.csv` — per‑epoch metrics (loss, MAE, MSE)
 - Results & visuals
   - `sample_prediction_0.png` — example qualitative result (saved after running inference)
-  - `data_visualization.png` — overview plot of dataset distributions/structure
+  - `output.png` — overview plot of dataset distributions/structure
 - Documentation
   - `README.md` — this document
 
@@ -169,7 +169,7 @@ Below is a high-level view of the dataset characteristics used in this work (inp
 - Attention gates improve tolerance to spurious features by weighting skip pathways based on decoder context.
 
 
-## 8. References (selected)
+## 8. References 
 
 - B. Holder (ed.), Electrical Impedance Tomography: Methods, History and Applications, IOP Publishing, 2004.
 - A. Adler and W. R. B. Lionheart, “Uses and abuses of EIT,” Physiological Measurement, 2006.
